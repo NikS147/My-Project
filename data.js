@@ -27,11 +27,6 @@ const product = [
             },
         ]
     },
-
-
-
-
-
     {
         id: 2,
         title: "4 сыра",
@@ -49,11 +44,6 @@ const product = [
             },
         ]
     },
-
-
-
-
-
     {
         id: 3,
         title: "Пепперони",
@@ -71,8 +61,6 @@ const product = [
             },
         ]
     },
-
-
     {
         id: 4,
         title: "Деревенская",
@@ -90,8 +78,6 @@ const product = [
             },
         ]
     },
-
-
     {
         id: 5,
         title: "Амерекано",
@@ -109,7 +95,6 @@ const product = [
             },
         ]
     },
-
     {
         id: 6,
         title: "Гавайская",
@@ -126,6 +111,5 @@ const product = [
                 value: "600гр"
             },
         ]
-    },
-
+    }
 ]

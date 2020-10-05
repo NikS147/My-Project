@@ -1,3 +1,79 @@
-#root {
-    background: red;
+@font-face {
+    src: url('./ravie.TTF');
+    font-family: 'Ravie';
+}
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+    width: 100%;
+    user-select: none;
+}
+body > .slider{
+    height: 250px;
+    border: 1px solid red; /* qqqqqqqqqqqqqq */
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px; /* qqqqqqqqqqqqqq */
+    border: 1px solid red; /* qqqqqqqqqqqqqq */
+}
+#Menu {
+    cursor: pointer;
+}
+#Cart {
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Ravie';
+    font-size: 40px;
+    line-height: 53px;
+    cursor: default;
+}
+h1 > span:first-child {
+    color: #FFB800;
+}
+h1 > span:nth-child(2) {
+    color: #244827;
+}
+h1 > span:last-child {
+    color: #0368FF;
+}
+.filter {
+    background-color: #DAFFEF;
+    padding: 10px 20px;
+    font-family: 'Oleo Script', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #0500FF;
+    text-transform: uppercase;
+}
+.filter input {
+    display: none;
+}
+.filter > span {
+    margin-left: 30px;
+}
+.filter > span:first-child {
+    margin-left: 0;
+}
+.filter label {
+    cursor: pointer;
+}
+.filter input[type=radio]:checked + label  {
+    color: red
 }
