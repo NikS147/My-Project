@@ -20,10 +20,6 @@ header {
     width: 100%;
     user-select: none;
 }
-body > .slider{
-    height: 250px;
-    border: 1px solid red; /* qqqqqqqqqqqqqq */
-}
 main {
     display: flex;
     flex-direction: column;
@@ -52,6 +48,46 @@ h1 > span:nth-child(2) {
 h1 > span:last-child {
     color: #0368FF;
 }
+#SliderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#SliderContainer > .sliderImages {
+    display: flex;
+    width: 100vw;
+    height: 700px;
+}
+#SliderContainer > .sliderImages > img {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    height: 700px;
+    transition: opacity 1s linear;
+}
+#SliderContainer > .sliderImages > img.active {
+    opacity: 1;
+}
+#SliderContainer > .arrow {
+    position: absolute;
+    font-size: 80px;
+    background: #70707096;
+    line-height: 100%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+    transition: background-color .2s linear;
+}
+#SliderContainer > .arrow:hover {
+    background: #707070;
+}
+#SliderContainer > .arrow.arrowLeft {
+    left: 0;
+}
+#SliderContainer > .arrow.arrowRight {
+    right: 0;
+}
+
 .filter {
     background-color: #DAFFEF;
     padding: 10px 20px;
